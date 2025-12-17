@@ -2,7 +2,6 @@
 
 An interactive audio-driven UI system built with React and modern frontend patterns.
 
----
 
 ## What this project is
 
@@ -12,7 +11,6 @@ sound check workflows using interactive UI and audio-related state handling.
 The focus of this project is **UI architecture**, **state management**, and
 **real-world interaction patterns**, not just visuals.
 
----
 
 ## Why this project exists
 
@@ -25,7 +23,6 @@ This project demonstrates how to build:
 
 It is built as a production-style frontend system, not a demo or tutorial.
 
----
 
 ## Key features
 
@@ -35,7 +32,6 @@ It is built as a production-style frontend system, not a demo or tutorial.
 - Tailwind-based layout system
 - Dockerized setup for consistent environments
 
----
 
 ## Tech stack
 
@@ -50,7 +46,6 @@ It is built as a production-style frontend system, not a demo or tutorial.
 - ESLint
 - PostCSS
 
----
 
 ## Project structure
 
@@ -61,7 +56,6 @@ It is built as a production-style frontend system, not a demo or tutorial.
 
 The structure is designed for clarity and long-term maintainability.
 
----
 
 ## Running the project locally
 
