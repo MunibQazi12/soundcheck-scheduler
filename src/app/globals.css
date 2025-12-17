@@ -1,0 +1,332 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
+  overflow-x: hidden;
+  background-color: white;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.bg-position {
+  background-position-y: 36px;
+}
+
+.mainHeadingAnimation {
+  animation-name: mainHeadingAnimation;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+
+@keyframes mainHeadingAnimation {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.LeftAnimation {
+  position: relative;
+  transform: translateX(-12%);
+  opacity: 0;
+  transition-delay: 0.4;
+  transition: 1s all ease;
+}
+
+.LeftAnimation.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.RightAnimation {
+  position: relative;
+  transform: translateX(28.49%);
+  opacity: 0;
+  /* transition-delay: 0.4; */
+  transition: 1s all ease;
+}
+
+.RightAnimation.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.BottomAnimation {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.BottomAnimation.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes barBounce {
+  10% {
+    transform: scaleY(0.7);
+    /* start by scaling to 30% */
+  }
+
+  30% {
+    transform: scaleY(1);
+    /* scale up to 100% */
+  }
+
+  60% {
+    transform: scaleY(0.8);
+    /* scale down to 50% */
+  }
+
+  80% {
+    transform: scaleY(0.75);
+    /* scale up to 75% */
+  }
+
+  100% {
+    transform: scaleY(0.7);
+    /* scale down to 60% */
+  }
+}
+
+.bar {
+  transform-origin: bottom;
+  animation: barBounce 1.7s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+
+.bar:nth-of-type(1) {
+  animation-delay: -1.4s;
+}
+
+.bar:nth-of-type(2) {
+  animation-delay: -1.2s;
+}
+
+.bar:nth-of-type(3) {
+  animation-delay: -1s;
+}
+
+.bar:nth-of-type(4) {
+  animation-delay: -0.8s;
+}
+
+.bar:nth-of-type(5) {
+  animation-delay: -0.6s;
+}
+
+.bar:nth-of-type(6) {
+  animation-delay: -0.4s;
+}
+
+.bar:nth-of-type(7) {
+  animation-delay: -0.2s;
+}
+
+.bar:nth-of-type(8) {
+  animation-delay: 0s;
+}
+
+.bar:nth-of-type(9) {
+  animation-delay: 0.2s;
+}
+
+.bar:nth-of-type(10) {
+  animation-delay: 0.4s;
+}
+
+.bar:nth-of-type(11) {
+  animation-delay: 0.6s;
+}
+
+.bar:nth-of-type(12) {
+  animation-delay: 0.8s;
+}
+
+.bar:nth-of-type(13) {
+  animation-delay: 1s;
+}
+
+.bar:nth-of-type(14) {
+  animation-delay: 1.2s;
+}
+
+.bar:nth-of-type(15) {
+  animation-delay: 1.4s;
+}
+
+.animateSlideBar {
+  animation: slideBar 0.4s linear alternate;
+}
+
+@keyframes slideBar {
+  0% {
+    left: -10%;
+  }
+
+  100% {
+    left: 21px;
+  }
+}
+
+.invitationTableScrollBar::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;
+}
+
+.invitationTableScrollBar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 7px;
+}
+
+.invitationTableScrollBar::-webkit-scrollbar-thumb {
+  background: #412161;
+  border-radius: 7px;
+}
+
+.lightpurplescrollbar::-webkit-scrollbar {
+  width: 6px;
+  /* height: 67px; */
+}
+
+.lightpurplescrollbar::-webkit-scrollbar-track {
+  background-color: #f2edfc;
+  width: 6px;
+  border-radius: 5px;
+}
+
+.lightpurplescrollbar::-webkit-scrollbar-thumb {
+  background: #c8bfda;
+  height: 67px;
+  border-radius: 5px;
+}
+
+.invitationTableNameTd {
+  width: 275px;
+}
+
+.invitationTableEmailTd {
+  width: 300px;
+}
+
+.invitationTablePhoneTd {
+  width: 232px;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1375px) {
+  .invitationTableNameTd {
+    width: 209px;
+  }
+
+  .invitationTableEmailTd {
+    width: 224px;
+  }
+
+  .invitationTablePhoneTd {
+    width: 150px;
+  }
+}
+
+.animationDashboardScrollNav {
+  position: fixed;
+  background-color: rgb(255 255 255 / 66%);
+  backdrop-filter: blur(10px);
+  z-index: 99;
+  animation: scrollNav 0.5s linear;
+  width: calc(100% - 233px);
+}
+
+.animationScrollNav {
+  position: fixed;
+  background-color: rgb(65 33 97 / 66%);
+  backdrop-filter: blur(10px);
+  z-index: 99;
+  animation: scrollNav 0.5s linear;
+  width: 100%;
+}
+
+.animationScrollNav:dark {
+  background-color: rgb(37, 41, 60, 0.66);
+}
+
+@keyframes scrollNav {
+  0% {
+    top: -30%;
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.translateScaleAnimation {
+  opacity: 1;
+}
+
+.translateScaleAnimation.active {
+  animation: oneStop 0.8s linear;
+}
+
+@keyframes oneStop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+ /* Custom styles to hide the native date picker icon */
+ /* .date-input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.date-input::-moz-calendar-picker-indicator {
+  display: none;
+}
+.date-input::-ms-clear {
+  display: none;
+}
+.date-input::-ms-expand {
+  display: none;
+} */
+
+@media (max-width: 1024px) {
+  .animationDashboardScrollNav {
+    width: 100%;
+  }
+}
+
+

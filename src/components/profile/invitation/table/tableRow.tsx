@@ -1,0 +1,39 @@
+import Image from "next/image"
+import invitationImg from "/src/assets/images/invitationList.png"
+
+const TableRow = () => {
+
+    return (
+        <tr className="h-12 bg-white dark:bg-dark-primary-100">
+            <td className="px-3 rounded-l-[7px] w-9 ">
+                <div className="w-9 h-9 rounded-full overflow-hidden">
+                    <Image src={invitationImg} alt="invitation" width={35} height={35} />
+                </div>
+            </td>
+            <td className="px-3 ">
+                <p className="text-xs pl-px font-semibold leading-[18px]  text-heading-text dark:text-darkText whitespace-nowrap">
+                    Sweet Matcha Band
+                </p>
+            </td>
+            <td className="text-xs leading-normal text-dark-gray dark:text-darkText px-3 whitespace-nowrap">
+                Sweetmatcha.band@example.com
+            </td>
+            <td className="text-xs leading-normal text-dark-gray dark:text-darkText px-3 whitespace-nowrap">
+                (555) 123-4567
+            </td>
+            <td className="w-9 px-2  rounded-e-[7px] whitespace-nowrap">
+                <div className="bg-lightLavender dark:bg-dark-primary-50 cursor-pointer rounded-[10px] w-[35px] h-[35px] px-[11px] py-[9px]">
+                    <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.7147 5.79883C8.50765 5.79883 8.33984 5.96663 8.33984 6.17368V13.2584C8.33984 13.4653 8.50765 13.6332 8.7147 13.6332C8.92174 13.6332 9.08955 13.4653 9.08955 13.2584V6.17368C9.08955 5.96663 8.92174 5.79883 8.7147 5.79883Z" fill="#323232" className="dark:fill-darkheading" />
+                        <path d="M4.28696 5.79883C4.07991 5.79883 3.91211 5.96663 3.91211 6.17368V13.2584C3.91211 13.4653 4.07991 13.6332 4.28696 13.6332C4.49401 13.6332 4.66181 13.4653 4.66181 13.2584V6.17368C4.66181 5.96663 4.49401 5.79883 4.28696 5.79883Z" fill="#323232" className="dark:fill-darkheading" />
+                        <path d="M1.06464 4.76521V14.0008C1.06464 14.5467 1.26481 15.0593 1.61447 15.4271C1.96253 15.796 2.44691 16.0054 2.95384 16.0062H10.0462C10.5532 16.0054 11.0376 15.796 11.3855 15.4271C11.7352 15.0593 11.9354 14.5467 11.9354 14.0008V4.76521C12.6304 4.58072 13.0809 3.9092 12.9879 3.19596C12.8947 2.48286 12.2872 1.94943 11.568 1.94928H9.64876V1.48072C9.65096 1.08668 9.49516 0.708315 9.21622 0.429958C8.93727 0.151747 8.55832 -0.00317213 8.16429 4.92525e-05H4.83571C4.44168 -0.00317213 4.06273 0.151747 3.78379 0.429958C3.50484 0.708315 3.34904 1.08668 3.35124 1.48072V1.94928H1.43203C0.712778 1.94943 0.105254 2.48286 0.0121267 3.19596C-0.0808542 3.9092 0.369554 4.58072 1.06464 4.76521ZM10.0462 15.2565H2.95384C2.31293 15.2565 1.81435 14.706 1.81435 14.0008V4.79816H11.1857V14.0008C11.1857 14.706 10.6871 15.2565 10.0462 15.2565ZM4.10095 1.48072C4.09846 1.28553 4.17518 1.09766 4.3137 0.959876C4.45208 0.822089 4.64038 0.746386 4.83571 0.749754H8.16429C8.35962 0.746386 8.54792 0.822089 8.6863 0.959876C8.82482 1.09752 8.90154 1.28553 8.89905 1.48072V1.94928H4.10095V1.48072ZM1.43203 2.69899H11.568C11.9406 2.69899 12.2427 3.00106 12.2427 3.37372C12.2427 3.74638 11.9406 4.04845 11.568 4.04845H1.43203C1.05937 4.04845 0.757292 3.74638 0.757292 3.37372C0.757292 3.00106 1.05937 2.69899 1.43203 2.69899Z" fill="#323232" className="dark:fill-darkheading" />
+                        <path d="M6.50181 5.79883C6.29476 5.79883 6.12695 5.96663 6.12695 6.17368V13.2584C6.12695 13.4653 6.29476 13.6332 6.50181 13.6332C6.70885 13.6332 6.87666 13.4653 6.87666 13.2584V6.17368C6.87666 5.96663 6.70885 5.79883 6.50181 5.79883Z" fill="#323232" className="dark:fill-darkheading" />
+                    </svg>
+
+                </div>
+            </td>
+        </tr>
+    );
+}
+
+export default TableRow;
