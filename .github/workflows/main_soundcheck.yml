@@ -1,0 +1,45 @@
+name: Docker Deploy Dev
+
+env:
+  CONTAINER: rtst-web
+  DOCKER_REGISTRY: rtstregistry.azurecr.io
+
+on:
+  push:
+    branches:
+      - main
+      - github-actions
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write #This is required for requesting the JWT
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
+
+      - name: Check Directory
+        run: |
+          ls -la
+
+      - name: Login to Container Registry
+        run: |
+          az acr login --name $DOCKER_REGISTRY
+
+      - name: Docker Build
+        run: |
+          docker build -t $DOCKER_REGISTRY/$CONTAINER:latest .  --network host
+
+      - name: Docker Push
+        run: |
+          docker push $DOCKER_REGISTRY/$CONTAINER:latest
