@@ -28,6 +28,9 @@ It demonstrates how to:
 
 This is a production-style frontend system built to reflect real-world usage and long-term maintainability.
 
+This project is intended for engineers evaluating frontend architecture,
+state management patterns, and long-term maintainability in React systems.
+
 ## Outcome
 This project shows my approach to building frontend systems with:
 - Complex but predictable state
