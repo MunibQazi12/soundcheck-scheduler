@@ -29,6 +29,19 @@ This project demonstrates how to build:
 
 It is built as a production-style frontend system, not a demo or tutorial. This project reflects how I design frontend systems for real production workflows.
 
+### Outcome
+
+This project demonstrates how I design and structure
+production-ready frontend systems with complex state,
+clear separation of concerns, and scalable UI architecture.
+
+### Key design decisions
+
+- Component-driven architecture to isolate UI and logic
+- Centralized state handling for predictable UI behavior
+- Tailwind for fast iteration with consistent design tokens
+- Docker for environment consistency across machines
+
 
 ## Key features
 
