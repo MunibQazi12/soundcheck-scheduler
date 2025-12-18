@@ -14,6 +14,12 @@ The focus of this project is **UI architecture**, **state management**, and
 
 ## Why this project exists
 
+# Demo
+A short walkthrough showing the scheduling flow, UI interactions,
+and state-driven behavior of the application.
+
+Demo video: https://youtu.be/Ps1lPpDFv_o
+
 This project demonstrates how to build:
 
 - Structured React and Next.js applications
@@ -22,12 +28,6 @@ This project demonstrates how to build:
 - Scalable frontend architecture suitable for real products
 
 It is built as a production-style frontend system, not a demo or tutorial. This project reflects how I design frontend systems for real production workflows.
-
-## Demo
-A short walkthrough showing the scheduling flow, UI interactions,
-and state-driven behavior of the application.
-
-Demo video: https://youtu.be/Ps1lPpDFv_o
 
 
 ## Key features
