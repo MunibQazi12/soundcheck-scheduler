@@ -23,6 +23,11 @@ This project demonstrates how to build:
 
 It is built as a production-style frontend system, not a demo or tutorial.
 
+A short walkthrough showing the scheduling flow, UI interactions,
+and state-driven behavior of the application.
+
+[Watch demo video]https://youtu.be/Ps1lPpDFv_o
+
 
 ## Key features
 
