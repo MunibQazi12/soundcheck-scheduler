@@ -11,14 +11,14 @@ sound check workflows using interactive UI and audio-related state handling.
 The focus of this project is **UI architecture**, **state management**, and
 **real-world interaction patterns**, not just visuals.
 
-
-## Why this project exists
-
 ### Demo
 A short walkthrough showing the scheduling flow, UI interactions,
 and state-driven behavior of the application.
 
 Demo video: https://youtu.be/Ps1lPpDFv_o
+
+## Why this project exists
+This project reflects how I design frontend systems for real production workflows, internal tools, and interactive dashboards.
 
 This project demonstrates how to build:
 
