@@ -21,13 +21,13 @@ This project demonstrates how to build:
 - Clean separation of UI, logic, and configuration
 - Scalable frontend architecture suitable for real products
 
-It is built as a production-style frontend system, not a demo or tutorial.
+It is built as a production-style frontend system, not a demo or tutorial. This project reflects how I design frontend systems for real production workflows.
 
 ## Demo
 A short walkthrough showing the scheduling flow, UI interactions,
 and state-driven behavior of the application.
 
-Watch demo video https://youtu.be/Ps1lPpDFv_o
+Demo video: https://youtu.be/Ps1lPpDFv_o
 
 
 ## Key features
