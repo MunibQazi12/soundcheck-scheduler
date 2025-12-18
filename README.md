@@ -12,6 +12,7 @@ This project emphasizes:
 
 ## Demo
 A short walkthrough showing the scheduling flow, UI interactions, and state-driven behavior.
+
 Demo video: https://youtu.be/Ps1lPpDFv_o
 
 
