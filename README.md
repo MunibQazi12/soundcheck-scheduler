@@ -1,5 +1,6 @@
 # Soundcheck Scheduler
-A production-style frontend system focused on UI architecture, state management, and real interaction flows.
+A production-style frontend system demonstrating scalable UI architecture,
+predictable state management, and real-world interaction flows.
 
 ## What this project is
 Soundcheck Scheduler is a frontend application built to manage and visualize sound check workflows.
