@@ -6,15 +6,16 @@ A production-style frontend system focused on UI architecture, state management,
 
 ## What this project is
 
-Soundcheck Scheduler is a frontend application built to manage and visualize sound-check workflows.
+Soundcheck Scheduler is a frontend application built to manage and visualize sound check workflows.
 
-It focuses on:
+The focus is not visual polish.
+
+The focus is how the UI behaves, scales, and stays predictable as complexity grows.
+
+This project emphasizes:
 - Interactive UI behavior
 - Audio-related state handling
-- Predictable, scalable frontend architecture
-
-This project is not about visuals alone.  
-It is about how the UI behaves, scales, and stays maintainable as complexity grows.
+- Clear and scalable frontend architecture
 
 ---
 
@@ -33,7 +34,7 @@ I built this project to reflect how I design frontend systems for real productio
 It demonstrates how to:
 - Structure React and Next.js applications for growth
 - Build interactive, state-driven user interfaces
-- Keep UI, logic, and configuration clearly separated
+- Keep UI logic predictable and easy to reason about
 - Design frontend architecture suitable for real products and internal tools
 
 This is a production-style system.  
@@ -43,7 +44,7 @@ It is not a tutorial or a visual prototype.
 
 ## Outcome
 
-This project shows my approach to building production-ready frontend systems with:
+This project shows my approach to building frontend systems with:
 - Complex but predictable state
 - Clear separation of concerns
 - Scalable UI architecture
@@ -54,9 +55,19 @@ This project shows my approach to building production-ready frontend systems wit
 ## Key design decisions
 
 - Component-driven architecture to isolate UI and behavior
-- Centralized state handling for predictable UI updates
+- Centralized state handling for predictable updates
 - Tailwind CSS for fast iteration with consistent design tokens
-- Docker for consistent environments across machines
+- Docker for environment consistency across machines
+
+---
+
+## What this project intentionally does not cover
+
+- Backend APIs or persistence layers
+- Authentication or authorization
+- Deployment or infrastructure concerns
+
+Those were intentionally excluded to keep the focus on frontend architecture and UI behavior.
 
 ---
 
@@ -66,19 +77,19 @@ This project shows my approach to building production-ready frontend systems wit
 - Audio-related UI state handling
 - Modular and reusable component structure
 - Tailwind-based layout system
-- Dockerized setup for local and consistent builds
+- Dockerized setup for consistent local builds
 
 ---
 
 ## Tech stack
 
-### Frontend
+**Frontend**
 - React
 - Next.js
 - TypeScript
 - Tailwind CSS
 
-### Tooling
+**Tooling**
 - Docker
 - ESLint
 - PostCSS
@@ -90,9 +101,9 @@ This project shows my approach to building production-ready frontend systems wit
 - `src/` — application logic and UI components  
 - `public/` — static assets  
 - `Dockerfile` — containerized build  
-- Configuration files for TypeScript, Tailwind, and Next.js  
+- Config files for TypeScript, Tailwind, and Next.js  
 
-The structure is designed for clarity and long-term maintenance.
+The structure is designed for clarity and long-term maintainability.
 
 ---
 
