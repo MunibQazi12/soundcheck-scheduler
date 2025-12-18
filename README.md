@@ -37,8 +37,7 @@ It demonstrates how to:
 - Keep UI logic predictable and easy to reason about
 - Design frontend architecture suitable for real products and internal tools
 
-This is a production-style system.  
-It is not a tutorial or a visual prototype.
+This is a production-style frontend system built to reflect real-world usage and long-term maintainability.
 
 ---
 
