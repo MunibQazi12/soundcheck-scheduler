@@ -14,7 +14,7 @@ The focus of this project is **UI architecture**, **state management**, and
 
 ## Why this project exists
 
-# Demo
+### Demo
 A short walkthrough showing the scheduling flow, UI interactions,
 and state-driven behavior of the application.
 
